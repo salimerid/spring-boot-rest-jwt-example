@@ -1,0 +1,1 @@
+INSERT INTO user (id, username, password, roles) VALUES (1, 'admin', '$2a$04$I9Q2sDc4QGGg5WNTLmsz0.fvGv3OjoZyj81PrSFyGOqMphqfS2qKu', 'ADMIN') ON DUPLICATE KEY UPDATE username="admin", password='$2a$04$I9Q2sDc4QGGg5WNTLmsz0.fvGv3OjoZyj81PrSFyGOqMphqfS2qKu', roles = 'ADMIN';
