@@ -88,11 +88,11 @@ We can call following endpoints by using POSTMAN
             "author" :"Salim Ahmed"
           }
           
-##### => To read the stories in text format and json format use following URL with `GET` Request
+##### => To read the stories in json format use following URL with `GET` Request
     http://localhost:8080/api/stories?page=0&limit=5
    - set content type as in header as `application/json` to read json format stories.
    
-##### => To update a news story in text format and json format use following URL with `PUT` Request
+##### => To update a story in json format use following URL with `PUT` Request
     http://localhost:8080/api/story/{id}
     
    - set `Authorization` as in header as `Bearer   <token>`
@@ -105,18 +105,20 @@ We can call following endpoints by using POSTMAN
              "author" :"Salim Ahmed"
            }
    
-##### => To delete a news story use following URL with `DELETE` Request
+##### => To delete a story use following URL with `DELETE` Request
 
      http://localhost:8080/api/story/{id}
        
    - set `Authorization` as in header as `Bearer   <token>`
  
  
-##### => To search the news stories use following URL with `GET` Request
+##### => To search the stories use following URL with `GET` Request
  
      http://localhost:8080/api/story?search=title:test,body:test,author:test
         
    - set `Authorization` as in header as `Bearer   <token>`
    - set content type as in header as `application/json`
  
+##### => Consume this endpoints with React JS
+This endpoints was consume the [react-js-axios-example](https://github.com/salimerid/react-js-axios-example) .
 
