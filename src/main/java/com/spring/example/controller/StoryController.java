@@ -28,7 +28,7 @@ public class StoryController {
         return new ResponseEntity<Object>(response, HttpStatus.OK);
     }
 
-    //-------read the story in text format or read the story in json format with pagination----------
+    //-------read the story in json format with pagination----------
     @RequestMapping(value = "/stories", method = RequestMethod.GET, produces = {"application/json"})
     ResponseEntity<?> getAllStory(@RequestParam(value = "page", defaultValue = "0") int page,
                                   @RequestParam(value = "limit", defaultValue = "5") int limit) {
